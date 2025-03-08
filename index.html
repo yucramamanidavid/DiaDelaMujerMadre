@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Día de la Mujer - Para mi Querida Madre</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Fondo decorativo -->
+    <div class="background-decor"></div>
+
+    <!-- Contenido principal -->
+    <div class="container text-center p-5 content">
+        <h1 class="animate__animated animate__fadeInDown">¡Feliz Día de la Mujer, Mamá!</h1>
+        <p class="lead mt-3">Para la mujer más importante de mi vida,</p>
+        <p id="typed-text" class="fs-5"></p>
+        <button id="surpriseBtn" class="btn btn-pink mt-4 animate__animated animate__pulse animate__infinite">
+            <i class="fas fa-gift"></i> ¡Haz clic para una sorpresa!
+        </button>
+        <div id="surprise" class="hidden mt-4">
+            <p class="fs-4 animate__animated animate__heartBeat">💖 Eres mi todo, mi razón de ser. Gracias por ser la mejor mamá del mundo. 💖</p>
+        </div>
+    </div>
+
+    <!-- Galería de fotos -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Nuestros Momentos Especiales</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="mama1.jpg" alt="Mamá y yo 1" class="img-fluid rounded gallery-img">
+                    <div class="overlay">Nuestro Primer Viaje</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="mama4.jpg" alt="Mamá y yo 2" class="img-fluid rounded gallery-img">
+                    <div class="overlay">Celebrando tu Cumpleaños</div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="gallery-item">
+                    <img src="mama3.jpg" alt="Mamá y yo 3" class="img-fluid rounded gallery-img">
+                    <div class="overlay">Un Día en Familia</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Poemas -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Poemas para Ti, Mamá</h2>
+        <div id="poemCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <p class="poem-text">"Mamá, en tus brazos encuentro paz,<br>un refugio donde el mundo se desvanece.<br>Eres mi luz en la oscuridad,<br>mi fuerza cuando flaqueo."</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="poem-text">"Tu amor, mamá, es mi hogar,<br>un lugar donde siempre puedo regresar.<br>En cada risa, en cada lágrima,<br>estás presente, como un sol que nunca se apaga."</p>
+                </div>
+                <div class="carousel-item">
+                    <p class="poem-text">"Gracias, mamá, por ser quien eres,<br>por tu amor incondicional y tu bondad sin par.<br>Eres la mujer que me enseñó a soñar,<br>a luchar por lo que quiero y a nunca rendirme."</p>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#poemCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#poemCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Reproductor de Música -->
+    <div class="container mt-5 text-center">
+        <h2>Nuestra Canción Especial</h2>
+        <audio controls class="mt-3">
+            <source src="Madre.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <!-- Formulario de Mensaje -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Déjame un Mensaje, Mamá</h2>
+        <form id="messageForm">
+            <div class="mb-3">
+                <textarea class="form-control" id="message" rows="3" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-pink">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Script personalizado -->
+    <script src="script.js"></script>
+</body>
+</html>
